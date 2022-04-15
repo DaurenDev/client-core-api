@@ -1,10 +1,10 @@
-package kz.dar.academy.backend.service;
+package kz.dar.academy.backend.service.deprecated;
 
 import kz.dar.academy.backend.model.ClientModel;
 
 import java.util.List;
 
-public interface ClientService {
+public interface ClientServiceOld {
     void createClient(ClientModel clientModel);
 
     List<ClientModel> getAllClients();

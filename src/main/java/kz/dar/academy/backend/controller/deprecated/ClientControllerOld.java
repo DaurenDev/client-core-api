@@ -1,7 +1,7 @@
-package kz.dar.academy.backend.controller;
+package kz.dar.academy.backend.controller.deprecated;
 
 import kz.dar.academy.backend.model.ClientModel;
-import kz.dar.academy.backend.service.ClientService;
+import kz.dar.academy.backend.service.deprecated.ClientServiceOld;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
@@ -12,13 +12,13 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/client")
-public class ClientController {
+@RequestMapping("/deprecated/client")
+public class ClientControllerOld {
     @Autowired
     Environment env;
 
     @Autowired
-    private ClientService clientService;
+    private ClientServiceOld clientService;
 
     @GetMapping("/check")
     public String check() {
